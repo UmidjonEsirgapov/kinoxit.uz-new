@@ -1,6 +1,6 @@
 import { login } from "../actions";
 
-export default function AdminLoginPage({
+export default async function AdminLoginPage({
   searchParams,
 }: {
   searchParams: Promise<{ error?: string }>;
