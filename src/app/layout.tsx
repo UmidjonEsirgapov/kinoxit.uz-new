@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kinoxit - Hostinger Deployment",
-  description: "Simple Next.js 14 app deployed on Hostinger",
+  title: "Kinoxit - Movie Streaming",
+  description: "Watch movies on Kinoxit",
 };
 
 export default function RootLayout({
