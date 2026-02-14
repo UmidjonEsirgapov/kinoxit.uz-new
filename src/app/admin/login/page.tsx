@@ -1,4 +1,5 @@
-import { login } from "../actions";
+import { login } from "./actions";
+import Link from "next/link";
 
 export default async function AdminLoginPage({
   searchParams,
@@ -57,9 +58,9 @@ export default async function AdminLoginPage({
           </button>
         </form>
         <p className="text-center">
-          <a href="/" className="text-sm text-gray-400 hover:text-white">
+          <Link href="/" className="text-sm text-gray-400 hover:text-white">
             ← Back to site
-          </a>
+          </Link>
         </p>
       </div>
     </div>

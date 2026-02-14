@@ -1,6 +1,7 @@
 import { redirect } from "next/navigation";
 import { isAdminAuthenticated } from "@/lib/auth-basic";
 import { AddMovieForm } from "./add-movie-form";
+import Link from "next/link";
 
 export default async function AdminPage() {
   const ok = await isAdminAuthenticated();
@@ -12,13 +13,13 @@ export default async function AdminPage() {
         <div className="flex items-center justify-between mb-8">
           <h1 className="text-2xl font-bold">Add Movie</h1>
           <div className="flex items-center gap-4">
-          <a href="/" className="text-sm text-gray-400 hover:text-white">
+          <Link href="/" className="text-sm text-gray-400 hover:text-white">
             ← Home
-          </a>
-          <a href="/admin/logout" className="text-sm text-gray-400 hover:text-white">
+          </Link>
+          <Link href="/admin/logout" className="text-sm text-gray-400 hover:text-white">
             Sign out
-          </a>
-        </div>
+          </Link>
+          </div>
         </div>
         <AddMovieForm />
       </div>
